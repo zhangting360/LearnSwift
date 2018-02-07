@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31E65FE202AD54D00FE9081 /* ZTCustomCollectionVCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E65FD202AD54D00FE9081 /* ZTCustomCollectionVCCollectionViewController.swift */; };
+		B31E6600202AD6CD00FE9081 /* ZTCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E65FF202AD6CD00FE9081 /* ZTCustomCollectionViewCell.swift */; };
+		B31E6603202AF4E300FE9081 /* ZTCustomCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E6602202AF4E300FE9081 /* ZTCustomCollectionLayout.swift */; };
 		B345E5F01FE25A4A0089C465 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345E5EF1FE25A4A0089C465 /* AppDelegate.swift */; };
 		B345E5F21FE25A4A0089C465 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345E5F11FE25A4A0089C465 /* ViewController.swift */; };
 		B345E5F51FE25A4A0089C465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B345E5F31FE25A4A0089C465 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B31E65FD202AD54D00FE9081 /* ZTCustomCollectionVCCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTCustomCollectionVCCollectionViewController.swift; sourceTree = "<group>"; };
+		B31E65FF202AD6CD00FE9081 /* ZTCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTCustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		B31E6602202AF4E300FE9081 /* ZTCustomCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTCustomCollectionLayout.swift; sourceTree = "<group>"; };
 		B345E5EC1FE25A4A0089C465 /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B345E5EF1FE25A4A0089C465 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B345E5F11FE25A4A0089C465 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,7 +28,7 @@
 		B345E5F61FE25A4A0089C465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B345E5F91FE25A4A0089C465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B345E5FB1FE25A4A0089C465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B345E6011FE262680089C465 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		B345E6011FE262680089C465 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +63,14 @@
 			children = (
 				B345E5EF1FE25A4A0089C465 /* AppDelegate.swift */,
 				B345E5F11FE25A4A0089C465 /* ViewController.swift */,
+				B31E65FF202AD6CD00FE9081 /* ZTCustomCollectionViewCell.swift */,
 				B345E5F31FE25A4A0089C465 /* Main.storyboard */,
 				B345E5F61FE25A4A0089C465 /* Assets.xcassets */,
 				B345E5F81FE25A4A0089C465 /* LaunchScreen.storyboard */,
 				B345E5FB1FE25A4A0089C465 /* Info.plist */,
 				B345E6011FE262680089C465 /* MyPlayground.playground */,
+				B31E65FD202AD54D00FE9081 /* ZTCustomCollectionVCCollectionViewController.swift */,
+				B31E6602202AF4E300FE9081 /* ZTCustomCollectionLayout.swift */,
 			);
 			path = LearnSwift;
 			sourceTree = "<group>";
@@ -76,6 +85,7 @@
 				B345E5E81FE25A4A0089C465 /* Sources */,
 				B345E5E91FE25A4A0089C465 /* Frameworks */,
 				B345E5EA1FE25A4A0089C465 /* Resources */,
+				B389A8A71FEB51B4006DA058 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,6 +143,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B389A8A71FEB51B4006DA058 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B345E5E81FE25A4A0089C465 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +166,9 @@
 			files = (
 				B345E5F21FE25A4A0089C465 /* ViewController.swift in Sources */,
 				B345E5F01FE25A4A0089C465 /* AppDelegate.swift in Sources */,
+				B31E6603202AF4E300FE9081 /* ZTCustomCollectionLayout.swift in Sources */,
+				B31E6600202AD6CD00FE9081 /* ZTCustomCollectionViewCell.swift in Sources */,
+				B31E65FE202AD54D00FE9081 /* ZTCustomCollectionVCCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +332,7 @@
 				B345E6001FE25A4A0089C465 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

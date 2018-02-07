@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     func updateTime() -> Void {
         count+=0.1
         showLb.text = String(format:"%.1f",count)
+        
     }
 
 
