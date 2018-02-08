@@ -65,6 +65,10 @@ class ZTCustomCollectionVCCollectionViewController: UICollectionViewController {
     
         return cell
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("点中")
+    }
 
     // MARK: UICollectionViewDelegate
 

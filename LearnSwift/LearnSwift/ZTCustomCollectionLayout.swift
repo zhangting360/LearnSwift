@@ -26,8 +26,15 @@ class ZTCustomCollectionLayout: UICollectionViewFlowLayout {
         for item in data! {
             if item.indexPath.section == 0{
                 if !section1Ary.isEmpty {
+//                    let tmp = Int(rect.size.width) - 10*2 - (section1Ary.count-1)*10
+                    let W = 50//tmp/section1Ary.count
+                    let leftRightSpace = (Int(rect.size.width) - W*section1Ary.count-(section1Ary.count-1)*10)/2
+                    
+                    var i = 0
+                    
                     for value in section1Ary as! [UICollectionViewLayoutAttributes]{
-                        
+                        value.frame = CGRect.init(x: leftRightSpace+i*(W+10), y: 0, width: W, height: Int(self.itemSize.height))
+                        i+=1
                     }
                 }
             }else{
@@ -45,7 +52,7 @@ class ZTCustomCollectionLayout: UICollectionViewFlowLayout {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.itemSize = CGSize.init(width: 100, height: 100)
+        self.itemSize = CGSize.init(width: 50, height: 50)
     }
     
     override func prepare() {
